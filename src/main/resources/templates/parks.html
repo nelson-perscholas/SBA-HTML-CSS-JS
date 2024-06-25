@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurryFriends - Parks</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../static/js/script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="../static/images/logo2.png" alt="FurryFriends Logo">
+        <h1>FurryFriends</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="parks.html">Parks</a></li>
+            <li><a href="events.html">Events</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="main-section">
+    <h1>Parks</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Rating</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Central Park</td>
+            <td>New York, NY</td>
+            <td>4.5</td>
+        </tr>
+        <tr>
+            <td>Griffith Park</td>
+            <td>Los Angeles, CA</td>
+            <td>4.8</td>
+        </tr>
+        <!-- Add more park entries as needed -->
+        </tbody>
+    </table>
+</section>
+
+<section class="form-section">
+    <h2>Add a New Park</h2>
+    <form id="park-registration">
+        <label for="park-name">Park Name:</label>
+        <input type="text" id="park-name" name="park-name" required>
+        <label for="park-location">Location:</label>
+        <input type="text" id="park-location" name="park-location" required>
+        <label for="park-rating">Rating:</label>
+        <input type="number" id="park-rating" name="park-rating" step="0.1" min="0" max="5" required>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 FurryFriends. All rights reserved.</p>
+</footer>
+</body>
+</html>

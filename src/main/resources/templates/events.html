@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurryFriends - Events</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../static/js/script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="../static/images/logo2.png" alt="FurryFriends Logo">
+        <h1>FurryFriends</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="parks.html">Parks</a></li>
+            <li><a href="events.html">Events</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="main-section">
+    <h1>Events</h1>
+    <table id="event-list">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Participants</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Dog Playdate in Central Park</td>
+            <td>July 10, 2024</td>
+            <td>New York, NY</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Group Walk in Griffith Park</td>
+            <td>August 5, 2024</td>
+            <td>Los Angeles, CA</td>
+            <td>8</td>
+        </tr>
+        <!-- Add more event entries as needed -->
+        </tbody>
+    </table>
+</section>
+
+<section class="form-section">
+    <h2>Register for an Event</h2>
+    <form id="event-registration">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="event-dropdown">Select Event:</label>
+            <select id="event-dropdown" name="event" required>
+                <option value="" selected disabled>Select an event</option>
+                <!-- Dropdown options will be populated dynamically by script.js -->
+            </select>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 FurryFriends. All rights reserved.</p>
+</footer>
+</body>
+</html>
