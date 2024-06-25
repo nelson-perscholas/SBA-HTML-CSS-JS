@@ -48,6 +48,7 @@ FurryFriends offers a platform where dog owners can discover nearby parks, parti
 
 ### Author
 - Nelson Chang
-- GitHub: [GitHub Repository](https://github.com/yourusername)
+- GitHub: [GitHub Repository](https://github.com/nelson-perscholas/SBA-HTML-CSS-JS)
 
 &copy; 2024 FurryFriends. All rights reserved.
+
