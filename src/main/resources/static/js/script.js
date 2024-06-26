@@ -4,14 +4,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const eventListTable = document.getElementById('event-list');
 
     if (eventDropdown && eventListTable) {
+        // Clear any existing options
+        eventDropdown.innerHTML = '';
+
         // Populate dropdown with event names from table rows
         const eventRows = eventListTable.querySelectorAll('tbody tr');
-        eventRows.forEach(row => {
-            const eventName = row.cells[0].textContent.trim(); // Assuming event name is in first cell
+        for (const row of eventRows) {
+            const eventName = row.cells[0].textContent.trim();
             const option = document.createElement('option');
             option.textContent = eventName;
             eventDropdown.appendChild(option);
-        });
+        }
+    }
+
+    // Email validation regex pattern
+    function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
 
     // Event registration form submission
@@ -28,6 +36,12 @@ document.addEventListener('DOMContentLoaded', function() {
             // Basic validation
             if (name === '' || email === '' || selectedEvent === '') {
                 alert('Please fill in all fields.');
+                return;
+            }
+
+            // Email validation
+            if (!isValidEmail(email)) {
+                alert('Please enter a valid email address.');
                 return;
             }
 
